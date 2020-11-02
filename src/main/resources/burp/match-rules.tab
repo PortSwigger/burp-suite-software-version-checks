@@ -16,14 +16,18 @@ awselb/([\d.]+)	1	AWS Elastic Load Balancer	Low	Certain
 Cherokee/(\d+\.[\d.b]+)(\s+\([a-zA-Z]+\))?	1	Cherokee Web Server	Low	Certain 2
 CKEDITOR.*version:"([\d.]+)"	1	CKEditor	Information	Certain
 Communique/([\d.-]+)	1	Adobe Communique	Low	Certain
+ecstatic-([\d.-]+)	1	Ecstatic (deprecated)	Medium	Certain
 Ember\.VERSION\s*=\s*["']([\w.]+)["']	1	Ember	Information	Certain	2
 http://errors\.angularjs\.org/([\d.]+)/	1	AngularJS	Information	Certain
+gunicorn/([\d.]+)	1	Gunicorn	Low	Certain
 h2o/([\d.]+(-DEV)?)	1	H2O	Low	Certain
 Hiawatha v([\d.]+)	1	Hiawatha	Low	Certain
 Handlebars\.VERSION\s*=\s*["']([\w.]+)["']	1	Handlebars.js	Information	Certain	2
 IBM_HTTP_Server/([\d.]+)	1	IBM HTTP Server	Low	Certain
+iText ([\d.]+)	1	iText	Low	Certain
 IWeb/([\d.]+)	1	360vision CCTV Web Server	Low	Certain
-Jetty\s?\(?([a-z\d.]+)\)?	1	Jetty	Low	Certain	2
+JasperReports Library version ([\d.]+)	1	JasperReports	Low	Certain
+Jetty\s?\(?([a-z\d.]+(-SNAPSHOT)?)\)?	1	Jetty	Low	Certain	3
 JBoss-([\d.]+(?:GA)?)	1	JBoss	Low	Certain	2
 JBoss-EAP/([\d.]+)	1	JBoss Enterprise Application Platform	Low	Certain		https://developers.redhat.com/products/eap/overview/
 JBoss_([\d_]+)	1	JBoss	Low	Certain
@@ -74,6 +78,8 @@ Perl/v([\d.]+)	1	Perl	Low	Certain
 PHP/([\d]+[\.]+(?:[-\w\d\.]+)?)	1	PHP	Low	Certain	2
 Phusion Passenger(?: \([a-zA-Z_/]+\))? ([\d.]+)	1	Phusion Passenger	Low	Certain
 Prototype\s*=\s*\{\s*Version:\s*["']([\d.]+)["']	1	Prototype	Information	Certain
+Python/([\d.]+)	1	Python	Low	Certain	2
+ReDoc Version:\s+([\d.\-rc]+)	1	ReDoc	Low	Certain	1	https://github.com/Redocly/redoc
 RestServices(>|":\s*")([\d.]+)	2	Mendix RestServices	Low	Certain	2
 >Roxen CMS<[\S\s]*?\|[\s\S]*?version ([\d.]+)	1	Roxen CMS	Low	Certain	2
 Ruby/([\d.]+(?:/\d{4}-\d{2}-\d{2})?)	1	Ruby	Low	Certain
@@ -91,12 +97,14 @@ Underscore\.js ([\d.]+)	1	Underscore.js	Information	Certain
 X-Powered-By: Undertow/([\d.]+)	1	Undertow	Low	Certain		http://undertow.io/
 var APPLICATION_FULL_VERSION = '([\d.]+)';	1	Microsoft CRM	Information	Certain
 Varnish/([\d.]+)	1	Varnish Cache	Low	Certain
+([\d.]+) varnish	1	Varnish Cache	Low	Certain
 "version":\s*"([a-z0-9\.\+]+)"	1	Generic	Information	Firm	2
 Via: ([\d.]+) vegur	1	Vegur Proxy	Low	Certain		https://github.com/heroku/vegur
 WEBrick/([\d.]+)	1	WEBrick	Low	Certain
 WebSockify Python/([\d.]+)	1	Python (Websockify)	Low	Certain
 WebSphere Application Server/([\d.]+)	1	IBM WebSphere Application Server	Low	Certain
-Server: WildFly/([\d.]+)	1	WildFly	Low	Certain		http://wildfly.org/
+Werkzeug/([\d.]+)	1	Werkzeug	Low	Certain		https://werkzeug.palletsprojects.com/
+WildFly/([\d.]+)	1	WildFly	Low	Certain		http://wildfly.org/
 X-AspNet-Version: ([\d.]+)	1	ASP.Net	Low	Firm
 X-AspNetMvc-Version: ([\d.]+)	1	ASP.Net MVC Framework	Low	Certain
 X-Cocoon-Version: ([\d.]+)	1	Apache Cocoon	Low	Certain
